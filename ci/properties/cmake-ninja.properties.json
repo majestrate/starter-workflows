@@ -1,0 +1,6 @@
+{
+    "name": "C/C++ with CMake and Ninja",
+    "description": "Build and test a CMake project using Ninja.",
+    "iconName": "c-cpp",
+    "categories": ["C", "C++"]
+}

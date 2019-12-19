@@ -1,0 +1,17 @@
+name: CMake/Ninja CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: configure
+      run: cmake -B build -G Ninja
+    - name: make
+      run: ninja -C build
+    - name: make test
+      run: ninja -C build test
